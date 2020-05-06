@@ -1,0 +1,43 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.e52f9387-3535-495b-b340-88fd71ddceab",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "arn:aws:lambda:us-east-1:827580605640:function:VirtualTraveler"
+              }
+            }
+          }
+        }
+      },
+      "resources": {
+        "manifest": {
+          "eTag": "d2b492ad65c59900b5e0ec15dbe3fc71"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "e55aa5b65b38554f4ff5838ab09c8d2b"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:827580605640:function:VirtualTraveler",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "VirtualTraveler",
+            "handler": "index.handler",
+            "revisionId": "cc8ab0c9-0474-4cfe-aa1e-4b4b4a033a0c",
+            "runtime": "nodejs12.x"
+          }
+        ]
+      }
+    }
+  }
+}
